@@ -21,7 +21,7 @@ System.register(['@angular/core'], function(exports_1, context_1) {
             SearchPipe = class SearchPipe {
                 transform(pipeData, pipeModifier) {
                     return pipeData.filter((eachItem) => {
-                        return eachItem['name'].toLowerCase().includes(pipeModifier.toLowerCase()) ||
+                        return eachItem['login'].toLowerCase().includes(pipeModifier.toLowerCase()) ||
                             eachItem['reknown'].toLowerCase().includes(pipeModifier.toLowerCase());
                     });
                 }
